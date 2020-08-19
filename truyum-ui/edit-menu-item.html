@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link type="text/css" rel="stylesheet" href="styles/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+<body class="body">
+
+    <header class="header">
+        <a class="head" href="main-page.html">HOME</a>
+        
+        <h1>truYum <img class="logo" src="images/logo.jpg" width="70px" height="50px"></img></h1>
+        
+    </header>
+          
+        
+        <article>
+        <br>
+        <br>
+        <br>
+        
+        <h2 id="main">Edit Menu Items</h2>
+        
+        </article>
+       
+    <center>
+        <br><br>
+        <form name="myForm" onsubmit="return validateForm()"></form>
+
+            <table>
+                <tr>
+                    <th><label for="name">Name</label></th>
+                </tr>
+                 <tr>
+                   <td><input type="text" height="200" width="200%" name="name" id="pname" ></td>
+                  </tr>
+                  <tr>
+                      <th><label for="price">Price</label></th>
+                       <th><label for="active">Active</label></th>
+                      <th><label for="dateOfLaunch">DateofLaunch</label></th>
+                      <th><label for="category">Category</label> </th>
+                  </tr>
+                    <tr>
+                      <td width=20%><input type="number" name="price" id="pprice" >
+                       </td>
+                       <td width=15%>
+                         <input type="radio" name="active" value="yes" id="pactive">Yes 
+                          <input type="radio" name="active" value="no" id="pactive">No
+                         </td>
+                         <td >
+                           <input type="date" name="dateofLaunch" id="pdateOfLaunch">
+                         </td>
+                        <td>
+                             <select name="category" id="pcategory">
+                                         <option value="-1" selected>Choose</option>
+                                         <option  value="Starters">Starters</option>
+                                         <option value="Main Course">Main Course</option>
+                                         <option value="Dessert">Dessert</option>
+                                         <option value="Drinks">Drinks</option>
+                             </select>
+                         </td>
+                     </tr>
+                        <tr>
+                          
+                        <td><input type="checkbox" name="freedelivery" id="pfreedelivery">FreeDelivery</td>
+                         </tr>
+                    <tr>
+                       <td>
+                       
+                     
+                         <button onclick="addItem();">Add</button>
+                         <button onclick="remove();">Delete</button>
+                         <button onclick="editItem();">Edit</button>
+                         
+                     
+                    </tr>
+             </table>
+             <div class="container">
+             <table id="table" border="1" class="table">
+                 <tr>
+                     <th>Name</th>
+                     <th>Price</th>
+                     <th>Active</th>
+                     <th>DateOfLaunch</th>
+                     <th>Category</th>
+                     <th>Free Delivery</th>
+                 </tr>
+            
+             </table>
+         </div> 
+           
+         </form>
+         <br>
+
+         <footer class="footer">
+            <h4>Copy Right @ 2019</h4>
+            </footer>
+            
+        
+</body>
+
+</html>
+
+
+
+
+
+
+
